@@ -59,6 +59,7 @@ a {
 }
 
 .tile {
+    min-height: 56px;
     width: 100%;
     background-color: rgb(37,37,37);
     margin: 7px;
