@@ -14,27 +14,26 @@ header {
     width: 95%;
     max-width: 788px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: flex-end;
     padding: 12px;
     margin-top: 15px;
 }
 
 .share-button {
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: rgb(240, 240, 240);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 2.5rem;
+    background-color: rgb(240,240,240);
 }
 
 .share-button svg {
-    margin-left: 12px;
-    margin-top: 10px;
-    color: rgb(0, 0, 0);
+    margin-left: 0.75rem;
+    margin-top: 0.625rem;
+    color: rgb(0,0,0);
 }
 
 .container {
-    width: 95%;
+    width: 91%;
     max-width: 788px;
     margin: 10px;
     display: flex;
@@ -43,8 +42,15 @@ header {
 }
 
 h1 {
-    font-size: 20px;
-    margin-bottom: 30px;
+    font-size: 1.25rem;
+}
+
+h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(141, 134, 134);
+    margin-top: -0.2rem;
+    margin-bottom: 1.875rem
 }
 
 a {
@@ -54,16 +60,12 @@ a {
 
 .tile {
     width: 100%;
-    max-width: 400px; /* Adjust this based on your design */
-    background-color: rgb(37, 37, 37);
-    margin: 7px auto; /* Center the tiles */
+    background-color: rgb(37,37,37);
+    margin: 7px;
     border-radius: 17px;
     display: flex;
-    flex-direction: column;
-}
-
-.tile > * {
-    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .tile:hover {
@@ -72,23 +74,29 @@ a {
 }
 
 .tile-share-button {
-    margin: 8px;
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
+    margin: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 1.25rem;
     background-color: rgb(52,52,52);
 }
 
 .tile-share-button svg {
-    margin-left: 12px;
-    margin-top: 10px;
+    margin-left: 0.75rem;
+    margin-top: 0.625rem;
 }
 
+.placeholder {
+    margin: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 1.25rem;
+}
 
 .image-container {
-    height: 72px; /* Adjust as needed */
-    width: 72px; /* Adjust as needed */
-    border-radius: 36px; /* Ensure it's a circle */
+    height: 6rem;
+    width: 6rem;
+    border-radius: 48px;
     overflow: hidden;
 }
 
@@ -103,11 +111,49 @@ a {
     height: 44px;
 }
 
-.icon .wattpad-container {
-    padding-top: 4px;
-    padding-left: 3px;
-}
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px; /* Adjust the font size for smaller screens if needed */
+    }
 
-.icon .wattpad-container .wattpad {
-    width: 102%
+    header {
+        padding: 8px; /* Adjust padding for smaller screens if needed */
+    }
+
+    .container {
+        width: 100%;
+        margin: 5px;
+    }
+
+    h1 {
+        font-size: 1rem; /* Adjust the font size for smaller screens if needed */
+        margin-bottom: 1rem;
+    }
+
+    .tile {
+        margin: 5px;
+        border-radius: 10px;
+    }
+
+    .tile-share-button {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 1rem;
+    }
+
+    .image-container {
+        height: 4rem;
+        width: 4rem;
+        border-radius: 32px;
+    }
+
+    .image-container img {
+        margin-top: 0; /* Adjust margin for smaller screens if needed */
+    }
+
+    .icon {
+        margin: 2px 4px;
+        width: 32px;
+        height: 32px;
+    }
 }
