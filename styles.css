@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    width: 95vw;
+    width: 95%;
     max-width: 788px;
     display: flex;
     justify-content: flex-end;
@@ -34,7 +34,7 @@ header {
 }
 
 .container {
-    width: 91vw;
+    width: 91%;
     max-width: 680px;
     margin: 18px;
     margin-top: -10px;
@@ -52,7 +52,8 @@ h2 {
     font-weight: 500;
     color: rgb(141, 134, 134);
     margin-top: -0.2rem;
-    margin-bottom: 1.8rem
+    margin-bottom: 1.8rem;
+    text-align: center;
 }
 
 a {
@@ -79,6 +80,10 @@ a {
     .tile-share-button {
         opacity: 1;
     }
+}
+
+.tile-text {
+    text-align: center;
 }
 
 .tile-share-button {
