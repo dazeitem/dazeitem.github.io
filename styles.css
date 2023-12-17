@@ -67,7 +67,6 @@ a {
     margin: 7px;
     border-radius: 17px;
     display: flex;
-    flex-shrink: 0;
     align-items: center;
     justify-content: space-between;
 }
@@ -75,6 +74,9 @@ a {
 .tile:hover {
     transition: cubic-bezier(.07, 1.41, .82, 1.41) 0.2s;
     transform: scale(1.02);
+    .tile-share-button {
+        opacity: 1;
+    }
 }
 
 .tile-share-button {
@@ -82,12 +84,12 @@ a {
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 1.25rem;
-    background-color: rgb(52,52,52);
+    opacity: 0;
 }
 
 .tile-share-button svg {
-    margin-left: 0.75rem;
-    margin-top: 0.625rem;
+    margin-left: 0.82rem;
+    margin-top: 0.76rem;
 }
 
 .placeholder {
@@ -106,6 +108,8 @@ a {
 
 .image-container img {
     width: 100%;
+    position: relative;
+    bottom: 1.3rem;
 }
 
 @media (max-width: 576px) {
